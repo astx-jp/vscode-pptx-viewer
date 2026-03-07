@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability / セキュリティ脆弱性
+    url: https://github.com/astx-jp/vscode-pptx-viewer/security
+    about: Please avoid posting sensitive details publicly. / 機密情報は公開しないでください。
+

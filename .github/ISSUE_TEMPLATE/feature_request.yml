@@ -1,0 +1,42 @@
+name: Feature request / 機能要望
+description: Suggest an improvement for PPTX Viewer
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion.
+        提案ありがとうございます。
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language / 言語
+      options:
+        - English
+        - 日本語
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / 課題
+      description: What problem are you trying to solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal / 提案
+      description: What would you like to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives / 代替案
+      description: Any alternatives you have considered.
+
