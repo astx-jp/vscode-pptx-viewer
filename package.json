@@ -1,0 +1,73 @@
+{
+  "name": "vscode-pptx-viewer",
+  "displayName": "PPTX Viewer",
+  "description": "View PowerPoint (.pptx) presentations directly in VS Code",
+  "version": "0.0.1",
+  "publisher": "astx-jp",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/astx-jp/vscode-pptx-viewer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/astx-jp/vscode-pptx-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/astx-jp/vscode-pptx-viewer/issues"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Visualization"
+  ],
+  "keywords": [
+    "pptx",
+    "powerpoint",
+    "slides",
+    "viewer"
+  ],
+  "activationEvents": [
+    "onCustomEditor:pptxViewer.preview"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "main": "./dist/extension.js",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "pptxViewer.preview",
+        "displayName": "PPTX Viewer",
+        "selector": [
+          {
+            "filenamePattern": "*.pptx"
+          }
+        ],
+        "priority": "default"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "check-types": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.webview.json",
+    "package": "node esbuild.mjs --production",
+    "vscode:prepublish": "npm run package",
+    "dump-slide": "node dist/dump-slide.mjs",
+    "screenshot": "PLAYWRIGHT_BROWSERS_PATH=/tmp/claude/pw-browsers node dist/dump-slide.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "esbuild": "^0.24.0",
+    "markdownlint-cli2": "^0.21.0",
+    "playwright": "^1.58.2",
+    "typescript": "^5.3.0",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.3.0",
+    "jszip": "^3.10.1"
+  }
+}
