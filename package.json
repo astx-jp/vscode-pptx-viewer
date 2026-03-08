@@ -57,8 +57,8 @@
     "vscode:prepublish": "npm run package",
     "dump-slide": "node dist/dump-slide.mjs",
     "screenshot": "PLAYWRIGHT_BROWSERS_PATH=/tmp/claude/pw-browsers node dist/dump-slide.mjs",
-    "test:pw:redraw": "node --test tools/playwright-tab-redraw.test.mjs",
-    "verify-release": "node tools/verify-release.mjs"
+    "verify-release": "node tools/verify-release.mjs",
+    "test:pw:redraw": "node --test tools/playwright-tab-redraw.test.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
