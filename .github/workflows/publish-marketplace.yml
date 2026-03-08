@@ -18,17 +18,14 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install deps
-        run: npm ci
+      - name: Strip build scripts (dist is pre-built)
+        run: npm pkg delete scripts
 
       - name: Verify release metadata
         run: npm run verify-release -- "$GITHUB_REF_NAME"
 
       - name: Verify packaged extension still builds
         run: npx @vscode/vsce package --no-dependencies
-
-      - name: Strip build scripts (dist is pre-built)
-        run: npm pkg delete scripts
 
       - name: Publish to Marketplace
         run: npx @vscode/vsce publish --pat "$VSCE_PAT"
