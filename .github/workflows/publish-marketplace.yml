@@ -22,7 +22,7 @@ jobs:
         run: npm pkg delete scripts
 
       - name: Verify release metadata
-        run: npm run verify-release -- "$GITHUB_REF_NAME"
+        run: node tools/verify-release.mjs "$GITHUB_REF_NAME"
 
       - name: Verify packaged extension still builds
         run: npx @vscode/vsce package --no-dependencies
