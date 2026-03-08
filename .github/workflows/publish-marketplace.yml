@@ -28,6 +28,6 @@ jobs:
         run: npx @vscode/vsce package --no-dependencies
 
       - name: Publish to Marketplace
-        run: npx @vscode/vsce publish --pat "$VSCE_PAT"
+        run: npx @vscode/vsce publish --no-dependencies --pat "$VSCE_PAT"
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
