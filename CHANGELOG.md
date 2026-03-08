@@ -2,7 +2,7 @@
 
 ## 0.0.3
 
-- Fix custom editor reload after tab switching so the slide view does not become blank and the counter does not reset to `0 / 0`
+- Fix custom editor reload after tab switching so the slide view does not become blank and the counter does not reset to `0 / 0`.
 
 ## 0.0.2
 
