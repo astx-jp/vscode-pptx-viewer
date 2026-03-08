@@ -2,9 +2,10 @@
   "name": "vscode-pptx-viewer",
   "displayName": "PPTX Viewer",
   "description": "View PowerPoint (.pptx) presentations directly in VS Code",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "astx-jp",
   "license": "SEE LICENSE IN LICENSE",
+  "icon": "assets/icon.png",
   "homepage": "https://github.com/astx-jp/vscode-pptx-viewer",
   "repository": {
     "type": "git",
@@ -55,7 +56,9 @@
     "package": "node esbuild.mjs --production",
     "vscode:prepublish": "npm run package",
     "dump-slide": "node dist/dump-slide.mjs",
-    "screenshot": "PLAYWRIGHT_BROWSERS_PATH=/tmp/claude/pw-browsers node dist/dump-slide.mjs"
+    "screenshot": "PLAYWRIGHT_BROWSERS_PATH=/tmp/claude/pw-browsers node dist/dump-slide.mjs",
+    "verify-release": "node tools/verify-release.mjs",
+    "test:pw:redraw": "node --test tools/playwright-tab-redraw.test.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
