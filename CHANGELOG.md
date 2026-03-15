@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.5
+
+- Add bar chart rendering.
+
 ## 0.0.4
 
 - Fix paragraph alignment lost when a paragraph contains multiple text runs.
@@ -11,9 +15,9 @@
 
 ## 0.0.2
 
-- Add extension icon to Marketplace listing
-- Sync icon asset to public repo
+- Add extension icon to Marketplace listing.
+- Sync icon asset to public repo.
 
 ## 0.0.1
 
-- Initial release
+- Initial release.
