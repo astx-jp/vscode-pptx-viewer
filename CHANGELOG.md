@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.7
+
+- Fix table rendering: merged cells, vertical text alignment in cells.
+- Internal: renderer refactoring for concurrent-safe rendering.
+
 ## 0.0.6
 
 - Add zoom and pan support for slide view (Ctrl+scroll, Ctrl+/-, drag to pan).
