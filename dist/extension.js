@@ -31,6 +31,11 @@
         <button id="prev-btn" title="Previous slide">\u2190</button>
         <span id="slide-counter">0 / 0</span>
         <button id="next-btn" title="Next slide">\u2192</button>
+        <span class="nav-separator"></span>
+        <button id="zoom-out-btn" title="Zoom out (Ctrl+-)">&#x2212;</button>
+        <span id="zoom-label" title="Double-click slide to reset">100%</span>
+        <button id="zoom-in-btn" title="Zoom in (Ctrl++)">&#x2b;</button>
+        <button id="zoom-reset-btn" title="Fit to window (Ctrl+0)">Fit</button>
         <span id="debug-badge" hidden>DEBUG</span>
       </div>
     </div>
