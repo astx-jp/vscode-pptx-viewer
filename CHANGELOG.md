@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.6
+
+- Add zoom and pan support for slide view (Ctrl+scroll, Ctrl+/-, drag to pan).
+- Fix vertical text offset caused by CSS default line-height adding extra leading.
+
 ## 0.0.5
 
 - Add bar chart rendering.
