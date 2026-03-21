@@ -1,4 +1,4 @@
-name: Publish to VS Code Marketplace
+name: Publish to Marketplaces
 
 on:
   push:
@@ -27,7 +27,12 @@ jobs:
       - name: Verify packaged extension still builds
         run: npx @vscode/vsce package --no-dependencies
 
-      - name: Publish to Marketplace
+      - name: Publish to VS Code Marketplace
         run: npx @vscode/vsce publish --no-dependencies --pat "$VSCE_PAT"
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - name: Publish to Open VSX Registry
+        run: npx ovsx publish --no-dependencies --pat "$OVSX_PAT"
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
