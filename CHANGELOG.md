@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.8
+
+- Render all PowerPoint preset shapes with appropriate geometry.
+  - Stars, ribbons, callouts, flowcharts, etc.
+- Add shadow rendering from theme styles.
+
 ## 0.0.7
 
 - Fix table rendering: merged cells, vertical text alignment in cells.

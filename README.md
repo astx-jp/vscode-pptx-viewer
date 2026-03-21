@@ -33,6 +33,10 @@ npm run compile
 
 Press `F5` in VS Code to launch the Extension Development Host.
 
+## Third-Party Data
+
+Preset shape geometry definitions (`assets/ooxml/presetShapeDefinitions.xml`) are taken from the [ECMA-376 5th Edition](https://ecma-international.org/publications-and-standards/standards/ecma-376/) specification package (`OfficeOpenXML-DrawingMLGeometries.zip`). ECMA-376 is a publicly available international standard.
+
 ## License
 
 Free to use, but not open source. See [LICENSE](LICENSE).
