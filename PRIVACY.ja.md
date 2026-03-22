@@ -1,6 +1,6 @@
 # プライバシー
 
-PPTX Viewer は、PowerPoint（`.pptx`）を VS Code 環境内でローカルに処理します。
+PPTX Viewer は、PowerPoint ファイル（`.pptx`, `.ppsx`, `.pptm`, `.ppsm`, `.potx`, `.potm`）を エディター（VS Code, Cursor, Windsurf 等）環境内でローカルに処理します。
 
 ## 収集するデータ
 
@@ -9,10 +9,10 @@ PPTX Viewer は、PowerPoint（`.pptx`）を VS Code 環境内でローカルに
 
 ## ネットワークアクセス
 
-- 本拡張は `.pptx` の内容を外部サーバーへ送信しません。
+- 本拡張はファイルの内容を外部サーバーへ送信しません。
 - 通常利用にネットワークアクセスは不要です。
 
 ## ログ
 
-- エラー発生時、VS Code の `出力` や Developer Tools にログが表示されることがあります。
+- エラー発生時、エディターの `出力` や Developer Tools にログが表示されることがあります。
   そのログにはファイル名やエラー詳細が含まれる場合があります。

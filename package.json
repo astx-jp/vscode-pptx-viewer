@@ -1,8 +1,8 @@
 {
   "name": "vscode-pptx-viewer",
   "displayName": "PPTX Viewer",
-  "description": "View PowerPoint (.pptx) presentations directly in VS Code",
-  "version": "0.0.8",
+  "description": "View PowerPoint (.pptx, .ppsx, .pptm, .ppsm, .potx, .potm) presentations directly in VS Code",
+  "version": "0.0.9",
   "publisher": "astx-jp",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "assets/icon.png",
@@ -22,6 +22,11 @@
   ],
   "keywords": [
     "pptx",
+    "ppsx",
+    "pptm",
+    "ppsm",
+    "potx",
+    "potm",
     "powerpoint",
     "slides",
     "viewer"
@@ -41,6 +46,21 @@
         "selector": [
           {
             "filenamePattern": "*.pptx"
+          },
+          {
+            "filenamePattern": "*.ppsx"
+          },
+          {
+            "filenamePattern": "*.pptm"
+          },
+          {
+            "filenamePattern": "*.ppsm"
+          },
+          {
+            "filenamePattern": "*.potx"
+          },
+          {
+            "filenamePattern": "*.potm"
           }
         ],
         "priority": "default"
@@ -69,6 +89,7 @@
   },
   "dependencies": {
     "chart.js": "^4.5.1",
+    "emf-converter": "^1.0.7",
     "fast-xml-parser": "^4.3.0",
     "jszip": "^3.10.1",
     "sharp": "^0.34.5"

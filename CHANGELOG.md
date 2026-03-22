@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.9
+
+- Add support for `.pptm`, `.ppsm`, `.potx`, `.potm` formats.
+
 ## 0.0.8
 
 - Render all PowerPoint preset shapes with appropriate geometry.
