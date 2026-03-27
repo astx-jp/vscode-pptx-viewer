@@ -2,7 +2,7 @@
   "name": "vscode-pptx-viewer",
   "displayName": "PPTX Viewer",
   "description": "View PowerPoint (.pptx, .ppsx, .pptm, .ppsm, .potx, .potm) presentations directly in VS Code",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "publisher": "astx-jp",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "assets/icon.png",

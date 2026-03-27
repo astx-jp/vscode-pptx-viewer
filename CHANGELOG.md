@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.10
+
+- Display placeholder overlays for unsupported elements on slides.
+- Add issue reporting shortcut and automatic unsupported element detection.
+- Unify warning system (SlideWarning): font warnings, macro detection, AI-generated metadata, and structural warnings.
+
 ## 0.0.9
 
 - Add support for `.pptm`, `.ppsm`, `.potx`, `.potm` formats.

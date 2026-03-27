@@ -77,6 +77,14 @@ body:
         VS Code の Output / Developer Tools のログがあれば貼ってください（機密は除く）。
       render: text
 
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context / その他
+      description: |
+        Any extra info (slide number, unsupported element warnings, etc.).
+        スライド番号や未対応要素の警告など追加情報があれば記載してください。
+
   - type: checkboxes
     id: privacy
     attributes:
