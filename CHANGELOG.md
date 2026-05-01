@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.11
+
+- Improve text rendering compatibility with PowerPoint.
+- Fix font size and bold styling in some presentations.
+
 ## 0.0.10
 
 - Display placeholder overlays for unsupported elements on slides.
