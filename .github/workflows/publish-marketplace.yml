@@ -18,11 +18,11 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Strip build scripts (dist is pre-built)
-        run: npm pkg delete scripts
-
       - name: Verify release metadata
         run: node tools/verify-release.mjs "$GITHUB_REF_NAME"
+
+      - name: Strip build scripts (dist is pre-built)
+        run: npm pkg delete scripts
 
       - name: Verify packaged extension still builds
         run: npx @vscode/vsce package --no-dependencies
