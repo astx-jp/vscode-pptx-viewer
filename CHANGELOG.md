@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.0.12
+
+- Fix rendering issues in some decks, including centered titles, wrapped labels,
+  table text alignment, and inline text fields.
+- Improve rendering of rotated/flipped groups, cropped image opacity, and chart
+  series colors that use theme colors.
+- Fix an issue where slides could fail to appear in some PPTX files.
+- Open supported hyperlinks from shapes, pictures, and text through VS Code.
+- Improve viewer stability when closing PPTX tabs during parsing or opening
+  unusually large files.
+
 ## 0.0.11
 
 - Improve text rendering compatibility with PowerPoint.
@@ -9,7 +20,8 @@
 
 - Display placeholder overlays for unsupported elements on slides.
 - Add issue reporting shortcut and automatic unsupported element detection.
-- Unify warning system (SlideWarning): font warnings, macro detection, AI-generated metadata, and structural warnings.
+- Unify warning system (SlideWarning): font warnings, macro detection,
+  AI-generated metadata, and structural warnings.
 
 ## 0.0.9
 
@@ -42,7 +54,8 @@
 
 ## 0.0.3
 
-- Fix custom editor reload after tab switching so the slide view does not become blank and the counter does not reset to `0 / 0`.
+- Fix custom editor reload after tab switching so the slide view does not become
+  blank and the counter does not reset to `0 / 0`.
 
 ## 0.0.2
 

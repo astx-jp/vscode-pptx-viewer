@@ -2,7 +2,7 @@
   "name": "vscode-pptx-viewer",
   "displayName": "PPTX Viewer",
   "description": "View PowerPoint (.pptx, .ppsx, .pptm, .ppsm, .potx, .potm) presentations directly in VS Code",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "publisher": "astx-jp",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "assets/icon.png",
@@ -78,9 +78,15 @@
     "slide:measure": "node tools/measure-slide-dom.mjs",
     "slide:diff": "node tools/pixel-diff.mjs",
     "evidence": "node dist/evidence-baseline.mjs",
+    "evidence:slide": "node tools/commit-visual-probe.mjs",
     "evidence:capture": "node dist/evidence-baseline.mjs capture",
     "evidence:diff": "node dist/evidence-baseline.mjs diff",
     "evidence:summary": "node dist/evidence-baseline.mjs summary",
+    "test": "npm run test:unit && npm run test:vitest",
+    "test:unit": "node tools/run-parser-unit-tests.mjs",
+    "test:vitest": "vitest run",
+    "audit:high": "npm audit --audit-level=high",
+    "test:tools": "node --test tools/verify-release.test.mjs && node tools/run-parser-unit-tests.mjs",
     "test:pw:redraw": "node --test tools/playwright-tab-redraw.test.mjs",
     "test:pw:spautofit": "node --test tools/playwright-spautofit.test.mjs",
     "lint:md": "markdownlint-cli2",
@@ -99,7 +105,7 @@
   "dependencies": {
     "chart.js": "^4.5.1",
     "emf-converter": "^1.0.7",
-    "fast-xml-parser": "^4.3.0",
+    "fast-xml-parser": "^4.5.6",
     "jszip": "^3.10.1",
     "sharp": "^0.34.5"
   }

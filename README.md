@@ -19,7 +19,16 @@ Open PowerPoint files directly inside VS Code and compatible editors (Cursor, Wi
 - Slide navigation (next/prev, jump to slide)
 - Thumbnail sidebar
 - Bar chart rendering
-- Keyboard-friendly, lightweight, zero external dependencies
+- Keyboard-friendly, lightweight, no external network calls
+
+## Comparison
+
+| Option | Opens `.pptx` in VS Code | Requires external app | Direct PPTX rendering | Best for |
+|---|---:|---:|---:|---|
+| PPTX Viewer | Yes | No | Yes | Quick local previews inside the editor |
+| PowerPoint desktop | No | Yes | Yes | Authoring and final review |
+| PDF/image conversion workflow | Partial | Yes | No | Sharing fixed visual snapshots |
+| Generic file preview | Partial | No | No | Checking file presence, not slide content |
 
 ## Usage
 
