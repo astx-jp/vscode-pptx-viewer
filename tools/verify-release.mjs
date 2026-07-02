@@ -89,6 +89,7 @@ const PACKAGE_DENYLIST = [
   '.vscode/',
   '.claude/',
   '.github/',
+  '.envrc',
   'docs/',
   'evidence/',
   'ref/',
@@ -101,6 +102,9 @@ const PACKAGE_DENYLIST = [
   'dist/pptx-autofind-',
   'dist/dump-slide.',
   'dist/generate-shape-gallery.',
+  'dist/commercial-runtime.',
+  'dist/api-oem.',
+  'dist/check-pptx.',
 ];
 
 export function verifyPackagedFiles(files, deps = defaultDeps) {
@@ -120,7 +124,7 @@ export function verifyPackagedFiles(files, deps = defaultDeps) {
 
   if (deps.readFile) {
     const vscodeIgnore = deps.readFile(new URL('../.vscodeignore', import.meta.url), 'utf8');
-    for (const requiredIgnore of ['.local/**', 'ref/**', 'dist/evidence-baseline.*', 'dist/pptx-autofind-*']) {
+    for (const requiredIgnore of ['.local/**', 'ref/**', '.envrc', 'dist/evidence-baseline.*', 'dist/pptx-autofind-*', 'dist/commercial-runtime.*', 'dist/api-oem.*', 'dist/check-pptx.*']) {
       if (!vscodeIgnore.includes(requiredIgnore)) {
         fail(`.vscodeignore must include ${requiredIgnore}`);
       }
