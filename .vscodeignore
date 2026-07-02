@@ -10,6 +10,11 @@ ref/**
 samples/**
 tools/**
 node/**
+gallery/**
+.wrangler/**
+logs/**
+fixtures/**
+.githooks/**
 # Local artifacts (accidentally created in repo root)
 --screenshot/**
 PLAYWRIGHT_BROWSERS_PATH=/**

@@ -1,8 +1,12 @@
+<!-- markdownlint-disable MD013 -->
+
 # PPTX Viewer
 
 VS Code および互換エディター（Cursor, Windsurf 等）上で PowerPoint ファイルをそのまま開けます。PowerPoint、LibreOffice、外部変換ツールは不要です。
 
-[English](README.md) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=astx-jp.vscode-pptx-viewer) | [GitHub](https://github.com/astx-jp/vscode-pptx-viewer)
+[English](README.md) |
+[Marketplace](https://marketplace.visualstudio.com/items?itemName=astx-jp.vscode-pptx-viewer) |
+[GitHub](https://github.com/astx-jp/vscode-pptx-viewer)
 
 ![PPTX Viewer Demo](assets/demo-shape-gallery.png)
 
@@ -34,6 +38,15 @@ VS Code および互換エディター（Cursor, Windsurf 等）上で PowerPoin
 
 1. エディターで PowerPoint ファイルを開く
 2. **PPTX Viewer** のカスタムエディタが自動で開く
+
+## 出荷前チェックの商用評価
+
+PPTX Viewer は無料の表示入口です。
+AI生成・量産PowerPointを手元とCIで検査する商用化候補は
+[PPTX出荷前チェックパック](docs/preflight-pack-offer.md) に分けて説明しています。
+有償価値はローカル実行コード単体ではなく、signed commercial report、
+rule/profile update、support entitlement、workspace管理、
+hosted/private runner候補に分散させます。
 
 ## 既知の制約
 

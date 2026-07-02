@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.1.0
+
+- Draw 3D bar charts as real 3D with depth and perspective. Previously they were
+  shown as flat 2D bars.
+- Improve scatter, line, and pie charts so lines, legends, and axis labels look
+  closer to PowerPoint.
+- Support more SmartArt diagrams, including organization charts and pyramids,
+  with better text sizing, colors, and gradients. Unsupported diagrams now show
+  a placeholder instead of a broken layout.
+- Use fonts embedded in the file so text appears in the intended typeface
+  instead of a substitute, and match PowerPoint's bold behavior more closely.
+- Draw more shapes (arrows, ribbons, callouts), gradient and pattern fills, and
+  effects like shadow, glow, and blur, plus dashed/double lines and arrowheads.
+- Fix many spacing and layout details in text, paragraphs, tables, and images:
+  line spacing, paragraph gaps, vertical text position, table borders and merged
+  cells, and image scaling quality.
+- Generate date fields automatically.
+
 ## 0.0.12
 
 - Fix rendering issues in some decks, including centered titles, wrapped labels,
