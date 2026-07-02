@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Packaging cleanup to reduce the published extension size.
+
 ## 0.1.0
 
 - Draw 3D bar charts as real 3D with depth and perspective. Previously they were

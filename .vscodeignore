@@ -22,12 +22,16 @@ Gemini_Generated_Image_*.png
 *.vsix
 .env
 .env.*
+.envrc
 docs/**
 dist/**/*.map
 dist/evidence-baseline.*
 dist/dump-slide.*
 dist/generate-shape-gallery.*
 dist/pptx-autofind-*
+dist/commercial-runtime.*
+dist/api-oem.*
+dist/check-pptx.*
 assets/icon-full.png
 *.ts
 tsconfig.json
