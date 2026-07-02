@@ -1,8 +1,12 @@
+<!-- markdownlint-disable MD013 -->
+
 # PPTX Viewer
 
 VS Code および互換エディター（Cursor, Windsurf 等）上で PowerPoint ファイルをそのまま開けます。PowerPoint、LibreOffice、外部変換ツールは不要です。
 
-[English](README.md) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=astx-jp.vscode-pptx-viewer) | [GitHub](https://github.com/astx-jp/vscode-pptx-viewer)
+[English](README.md) |
+[Marketplace](https://marketplace.visualstudio.com/items?itemName=astx-jp.vscode-pptx-viewer) |
+[GitHub](https://github.com/astx-jp/vscode-pptx-viewer)
 
 ![PPTX Viewer Demo](assets/demo-shape-gallery.png)
 
