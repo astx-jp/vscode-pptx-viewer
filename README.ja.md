@@ -28,7 +28,7 @@ VS Code および互換エディター（Cursor, Windsurf 等）上で PowerPoin
 ## 比較
 
 | 選択肢 | VS Code 内で `.pptx` を開ける | 外部アプリが必要 | PPTX 直接描画 | 向いている用途 |
-|---|---:|---:|---:|---|
+| --- | ---: | ---: | ---: | --- |
 | PPTX Viewer | はい | いいえ | はい | エディター内での素早いローカル確認 |
 | PowerPoint デスクトップ版 | いいえ | はい | はい | 編集と最終確認 |
 | PDF / 画像変換ワークフロー | 一部 | はい | いいえ | 固定された見た目の共有 |
@@ -38,15 +38,6 @@ VS Code および互換エディター（Cursor, Windsurf 等）上で PowerPoin
 
 1. エディターで PowerPoint ファイルを開く
 2. **PPTX Viewer** のカスタムエディタが自動で開く
-
-## 出荷前チェックの商用評価
-
-PPTX Viewer は無料の表示入口です。
-AI生成・量産PowerPointを手元とCIで検査する商用化候補は
-[PPTX出荷前チェックパック](docs/preflight-pack-offer.md) に分けて説明しています。
-有償価値はローカル実行コード単体ではなく、signed commercial report、
-rule/profile update、support entitlement、workspace管理、
-hosted/private runner候補に分散させます。
 
 ## 既知の制約
 
