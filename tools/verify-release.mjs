@@ -97,6 +97,7 @@ const PACKAGE_DENYLIST = [
   'src/',
   'tools/',
   'webview/',
+  'billing-server/',
   'node_modules/',
   'dist/evidence-baseline.',
   'dist/pptx-autofind-',
@@ -124,7 +125,7 @@ export function verifyPackagedFiles(files, deps = defaultDeps) {
 
   if (deps.readFile) {
     const vscodeIgnore = deps.readFile(new URL('../.vscodeignore', import.meta.url), 'utf8');
-    for (const requiredIgnore of ['.local/**', 'ref/**', '.envrc', 'dist/evidence-baseline.*', 'dist/pptx-autofind-*', 'dist/commercial-runtime.*', 'dist/api-oem.*', 'dist/check-pptx.*']) {
+    for (const requiredIgnore of ['.local/**', 'ref/**', '.envrc', 'billing-server/**', 'dist/evidence-baseline.*', 'dist/pptx-autofind-*', 'dist/commercial-runtime.*', 'dist/api-oem.*', 'dist/check-pptx.*']) {
       if (!vscodeIgnore.includes(requiredIgnore)) {
         fail(`.vscodeignore must include ${requiredIgnore}`);
       }

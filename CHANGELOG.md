@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.2.0
+
+New features:
+
+- Export or copy the current slide as PNG from the toolbar, with clipboard
+  copy or Shift+click to save as a file.
+- Auto-reload the preview when the open `.pptx` file changes on disk, useful
+  when a script or AI agent regenerates the deck.
+- Add local-only usage counters, surfaced only in the prefilled GitHub issue
+  report text; nothing is sent automatically.
+- Expose stable `__parsePptx`/`__loadSlide` export names for external
+  headless-rendering wrappers.
+
+Fixes:
+
+- Fix line, bubble, pie/doughnut, and 3D surface chart rendering, including
+  legends, data labels, and axis titles.
+- Fix text rendering accuracy: font kerning, embedded-font inheritance,
+  bullet colors, paragraph alignment, and vertical position.
+- Fix SmartArt pyramid and organization-chart layout and text fit.
+- Fix table rendering: merged-cell borders, trailing zeros, and overly bold
+  cell text.
+- Fix gradient fill and theme background tiling.
+- Load embedded fonts via binary transfer instead of inline CSS to reduce
+  memory use.
+
 ## 0.1.1
 
 - Packaging cleanup to reduce the published extension size.

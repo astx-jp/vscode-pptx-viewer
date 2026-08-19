@@ -11,6 +11,7 @@ samples/**
 tools/**
 node/**
 gallery/**
+billing-server/**
 .wrangler/**
 logs/**
 fixtures/**

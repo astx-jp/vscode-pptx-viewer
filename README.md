@@ -1,34 +1,44 @@
 # PPTX Viewer
 
-Open PowerPoint files directly inside VS Code and compatible editors (Cursor, Windsurf, etc.) — no PowerPoint, LibreOffice, or external converter required.
+Open PowerPoint files directly inside VS Code and compatible editors (Cursor,
+Windsurf, etc.) — no PowerPoint, LibreOffice, or external converter required.
 
-[日本語](README.ja.md) | [Marketplace](https://marketplace.visualstudio.com/items?itemName=astx-jp.vscode-pptx-viewer) | [GitHub](https://github.com/astx-jp/vscode-pptx-viewer)
+[日本語](README.ja.md)
+| [Marketplace](https://marketplace.visualstudio.com/items?itemName=astx-jp.vscode-pptx-viewer)
+| [GitHub](https://github.com/astx-jp/vscode-pptx-viewer)
 
 ![PPTX Viewer Demo](assets/demo-shape-gallery.png)
 
 ## Use Cases
 
-- **Check AI-generated slides instantly** — Preview `.pptx` files created by Claude Code, GPT, or other AI agents without leaving your editor
-- **Quick-look decks without PowerPoint** — Skim through slide decks directly in VS Code / Cursor, no app switching needed
-- **Local & private** — Everything runs locally. Your files are never sent to external servers
+- **Check AI-generated slides instantly** — Preview `.pptx` files created by
+  Claude Code, GPT, or other AI agents without leaving your editor
+- **Quick-look decks without PowerPoint** — Skim through slide decks directly
+  in VS Code / Cursor, no app switching needed
+- **Local & private** — Everything runs locally. Your files are never sent to
+  external servers
 
 ## Features
 
 - Native PPTX rendering — parses PowerPoint XML directly, not a PDF/image conversion
 - All OOXML presentation formats: `.pptx`, `.ppsx`, `.pptm`, `.ppsm`, `.potx`, `.potm`
 - Slide navigation (next/prev, jump to slide)
+- Auto-reload — the preview refreshes automatically when the file changes on
+  disk (ideal for AI agents or scripts regenerating a deck; disable with
+  `pptxViewer.autoReload`)
+- Copy any slide as a PNG image (or save it to a file) straight from the toolbar
 - Thumbnail sidebar
 - Bar chart rendering
 - Keyboard-friendly, lightweight, no external network calls
 
 ## Comparison
 
-| Option | Opens `.pptx` in VS Code | Requires external app | Direct PPTX rendering | Best for |
-|---|---:|---:|---:|---|
-| PPTX Viewer | Yes | No | Yes | Quick local previews inside the editor |
+| Option | Opens in editor | Needs external app | Direct render | Best for |
+| --- | ---: | ---: | ---: | --- |
+| PPTX Viewer | Yes | No | Yes | Quick local previews in the editor |
 | PowerPoint desktop | No | Yes | Yes | Authoring and final review |
-| PDF/image conversion workflow | Partial | Yes | No | Sharing fixed visual snapshots |
-| Generic file preview | Partial | No | No | Checking file presence, not slide content |
+| PDF/image conversion | Partial | Yes | No | Fixed visual snapshots |
+| Generic file preview | Partial | No | No | File presence, not content |
 
 ## Usage
 
@@ -52,7 +62,11 @@ Press `F5` to launch the Extension Development Host.
 
 ## Third-Party Data
 
-Preset shape geometry definitions (`assets/ooxml/presetShapeDefinitions.xml`) are taken from the [ECMA-376 5th Edition](https://ecma-international.org/publications-and-standards/standards/ecma-376/) specification package (`OfficeOpenXML-DrawingMLGeometries.zip`). ECMA-376 is a publicly available international standard.
+Preset shape geometry definitions (`assets/ooxml/presetShapeDefinitions.xml`)
+are taken from the
+[ECMA-376 5th Edition](https://ecma-international.org/publications-and-standards/standards/ecma-376/)
+specification package (`OfficeOpenXML-DrawingMLGeometries.zip`). ECMA-376 is a
+publicly available international standard.
 
 ## License
 
